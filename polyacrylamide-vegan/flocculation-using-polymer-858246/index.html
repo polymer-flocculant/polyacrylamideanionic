@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>flocculation using polymer - China Xinqi Polymer Co.,Ltd</title>
+<meta name="title" content="flocculation using polymer - China Xinqi Polymer Co.,Ltd">
+<meta name="dc.title" content="flocculation using polymer - China Xinqi Polymer Co.,Ltd">
+<meta name="description" content="<p>In step three (Fig. 2c) we utilized the inverse radial distance vectors as floor displacements to the mesh constructed in step 2. Then, the primary FE simulation was carried out to obtain the stress distribution that was assumed to mimic the one in the actu">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+<style type="text/css"> 
+.ff415a1a233715c27077bdc418fa178f9 p,.ff415a1a233715c27077bdc418fa178f9 span,.ff415a1a233715c27077bdc418fa178f9 label{
+font-size:16px!important;
+}
+.d3aa69c054a8c12765c41993f58e3c49a p,.d3aa69c054a8c12765c41993f58e3c49a a,.d3aa69c054a8c12765c41993f58e3c49a span,.d3aa69c054a8c12765c41993f58e3c49a label{
+font-size:16px!important;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-header{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: #3f43fd;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card:last-child{
+margin-bottom: 0;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-header .collapsed{
+color: #141764;
+}
+a{
+text-decoration: none;
+}
+.fc31771a55eea666897d7b8196c23d792 .w46c52427cad7c40a231f01316d0aeea4 *{
+color:#000000;
+}
+.fc31771a55eea666897d7b8196c23d792 .u393fdbe19f4c6171514ef756e27e85e0{
+background:#eddad8!important;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-header .collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.fc31771a55eea666897d7b8196c23d792 .row-item.w46c52427cad7c40a231f01316d0aeea4{
+background: #f0eeea;
+}
+footer a{
+color:#ffffff;
+text-decoration: underline;
+}
+.xd850728caf82dbbf3125c911f626f050{
+transition: all 0.3s;
+border-radius: 30px;
+}
+ul{
+list-style: circle;
+}
+.ff415a1a233715c27077bdc418fa178f9 *{
+color:#000000!important;
+}
+.yc31fd9803d2434e93a92ee0a7428facb{
+font-size:16px!important;
+color: #6f6f6f;
+}
+iframe{
+border: none!important;
+}
+footer{
+background:#090909;
+color:#ffffff;
+}
+.w46c52427cad7c40a231f01316d0aeea4 a{
+color:#ff871d!important;
+}
+.v247c8ac074d9c3c8e0b42b348d1a13c4{
+font-size: 14.3px;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.ub1c66c22d2bbe1ff440c4a0a69362394{
+position: relative;
+min-height: 600px;
+}
+.fc31771a55eea666897d7b8196c23d792 .row-item.u393fdbe19f4c6171514ef756e27e85e0{
+background: #f0dddb;
+}
+.dropdown-menu{
+top:79%;
+max-width: 800px;
+overflow-x: auto;
+}
+.c98edbeff45a00482abbede6b0375c0da{
+font-size: 2rem !important;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-body{
+padding: 1.75rem 2rem;
+}
+.d3aa69c054a8c12765c41993f58e3c49a{
+background:#fbf9f5;
+color:#030303;
+}
+.fc31771a55eea666897d7b8196c23d792 .row-item.tda50696b11c120654e4ce0f02f217058{
+background: #c8e5eb;
+}
+footer *{
+font-size:16px !important;
+}
+.fc31771a55eea666897d7b8196c23d792 .row-item.v655e45e7123713bcfb29c3ed3f35a431{
+background: #cbc8c8;
+}
+*{
+font-family: 'Kumbh Sans', sans-serif;
+}
+.y886d713b0ae7e7c2aeab71ca96e50b64{
+position: relative;
+z-index: 1;
+}
+.ff415a1a233715c27077bdc418fa178f9{
+background:#ffffff;
+}
+.fc31771a55eea666897d7b8196c23d792 .tda50696b11c120654e4ce0f02f217058{
+background:#bcd9df!important;
+}
+.btn-md{
+padding: 14.5px 29.9px;
+border-radius: 0;
+}
+.w74154b053d1768c82f5566d15cf4da86{
+text-decoration: underline!important;color:#ff9228!important
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b{
+position: relative;
+z-index: 1;
+}
+a:hover{
+color:#ffc658;background:#ffc658!important;
+}
+.fc31771a55eea666897d7b8196c23d792 .tda50696b11c120654e4ce0f02f217058 *{
+color:#000000;
+}
+body{
+color: #272727;
+}
+.fc31771a55eea666897d7b8196c23d792 p,.{special_content1_class} a,.fc31771a55eea666897d7b8196c23d792 label{
+font-size:16px!important;
+}
+.ta3701c4aac022e1644615ee83199d7d8{
+color: #434343;
+}
+.tda50696b11c120654e4ce0f02f217058{
+background:#eae8e4!important ;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.v655e45e7123713bcfb29c3ed3f35a431 a{
+color:#ff8c22!important;
+}
+.w1e09f26c78970151d2c69f6ad5c4350b{
+max-height: 300px;
+overflow-y: auto;
+}
+.xa39d5c7481b3a4102910fd60c1419a0f{
+font-size: 45px!important;
+}
+.nav-link{
+color: #000000;
+
+}
+.nav-item{
+padding-left:7.9px;
+padding-right:8px;
+padding-top:4.7px;
+padding-bottom:4.6px;
+}
+.b646c3885eea030d630af3ab6ce20ddfc{
+background-color:#ffc107!important;
+border-color:#ffc107!important;
+color:#000000!important;
+}
+.bf2a186d7b27d999f2f9a8af3ebf0ef24{
+font-size:45px!important;
+}
+.de3f26e9e0135aa205526fdac9c8b2e8b .card .card-header span{
+font-size: 1.5rem;
+}
+.u393fdbe19f4c6171514ef756e27e85e0 a{
+color:#fd7e14!important;
+}
+.fc31771a55eea666897d7b8196c23d792 h4{
+font-size:24px!important;
+}
+.fc31771a55eea666897d7b8196c23d792 .v655e45e7123713bcfb29c3ed3f35a431{
+background:#c1bebe!important;
+}
+.eb06be5d659c996fa65a6a610ec032be5{
+font-size: 19.9px;
+font-weight: bold;
+}
+.tdb0f8a5edddd073c41c2316f6584f98a:hover,.f19de71cc68bca29aafa0fa398bdf1b32:hover{
+background-size: 100% 100% !important;
+background: #ffc658!important;
+background-repeat: no-repeat !important;
+background-position: 0 90% !important;
+transition: background-size 0.2s ease-in !important;
+}
+.fc31771a55eea666897d7b8196c23d792 .u393fdbe19f4c6171514ef756e27e85e0 *{
+color:#000000;
+}
+.navbar a{
+font-size: 17.5px!important;
+font-weight: bold;
+}
+.xd850728caf82dbbf3125c911f626f050:hover{
+box-shadow: 0 49.9px 49.9px -25px rgb(0 0 0 / 30%);
+transform: rotate(-2deg) scale(1.03);
+}
+.fc31771a55eea666897d7b8196c23d792 .card-img{
+margin-bottom: 1.7rem;
+text-align: left;
+}
+.w46c52427cad7c40a231f01316d0aeea4 *{
+color:#000000;
+}
+.tda50696b11c120654e4ce0f02f217058 a{
+color:#ff881e!important;
+}
+.ff415a1a233715c27077bdc418fa178f9 a{
+font-size:16px;
+}
+.fc31771a55eea666897d7b8196c23d792 .v655e45e7123713bcfb29c3ed3f35a431 *{
+color:#000000;
+}
+.xb4b99eb68c8815b58a932a6758ddb50b{
+color: #9f9f9f;
+font-size: 19.7px;
+margin-bottom: 20.9px;
+}
+.fa8bbf0b54732bc2b74fadd1fe72ea0b9 i{
+border-radius: 50%;
+width: 36.9px;
+line-height: 35px;
+text-align: center;
+height: 36.9px;
+}
+.f19de71cc68bca29aafa0fa398bdf1b32{
+font-weight: inherit;
+background-image: linear-gradient(120deg, #ffd96b 0%, #ffd062 100%);
+background-repeat: no-repeat;
+background-size: 100% 30%;
+background-position: 0 90%;
+transition: background-size 0.2s ease-in;
+}
+.d3aa69c054a8c12765c41993f58e3c49a a,.ff415a1a233715c27077bdc418fa178f9 a{
+color:#030303!important;
+text-decoration: underline !important;
+}
+.fc31771a55eea666897d7b8196c23d792 .row-item{
+padding: 3rem;
+padding-top: 3.7rem;
+height: 100%;
+}
+.fa8bbf0b54732bc2b74fadd1fe72ea0b9 i:hover{
+background: white;
+color: #ffc658;!important;
+line-height: 35px;
+border-radius: 50%;
+width: 37.5px;
+text-align: center;
+height: 36.5px;
+}
+.f4ff1ec36b991cdb868fa3494963678c3{
+background: rgba(0, 0, 0, 0.6);
+text-align: center;
+}
+.d128c4630cd2feb8ec34638c5b3b1b9cb{
+width: 100%;
+max-height: 720px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.ud4f23c0b2e2d9f40295c78986fc857c4{
+background-color: #030303;
+font-size: 30.4px;
+height: 56.2px;
+min-width: 56.1px;
+padding: 0.7rem;
+padding-top: 13.2px;
+color: #fff !important;
+border: 1px solid #111111;
+border-radius: 50%;
+}
+.fc31771a55eea666897d7b8196c23d792 .w46c52427cad7c40a231f01316d0aeea4{
+background:#eae8e4!important ;
+}
+.f4ff1ec36b991cdb868fa3494963678c3 *{
+color: white !important;
+}
+html{
+scroll-behavior: smooth;
+}
+.fc31771a55eea666897d7b8196c23d792 .ub6a217ec98c743780295343621fd0278{
+margin-bottom: 1.5rem;
+}
+ 
+@media only screen and (max-width:1000px) {
+.ub1c66c22d2bbe1ff440c4a0a69362394 {
+min-height: 0px !important;
+}
+.bf2a186d7b27d999f2f9a8af3ebf0ef24 {
+font-size: 20px;
+}
+.xb4b99eb68c8815b58a932a6758ddb50b {
+font-size: 15px !important;
+}
+.d342b26cd26386c63c2210fed3c771089{
+padding-bottom: 0px !important;
+}
+} 
+</style>
+
+
+
+
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "flocculation using polymer - China Xinqi Polymer Co.,Ltd",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4","ratingCount": "120",
+"reviewCount": "242"
+}
+}
+</script></head>
+<body>
+<nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href=""  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon  fa fa-bars"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="align-items-center ml-auto navbar-nav d-flex"> <li class="nav-item">
+<p><a class="tdb0f8a5edddd073c41c2316f6584f98a nav-link" href=""  >flocculation using polymer - China Xinqi Polymer Co.,Ltd</a></p>
+</li></ul>
+</div>
+</nav>
+   
+<a href=""><div class="ub1c66c22d2bbe1ff440c4a0a69362394 d342b26cd26386c63c2210fed3c771089 container-fluid">
+<img  src="https://sc02.alicdn.com/kf/H7862aefdb85d469eb6bf53ad959a1f6bY.jpg"  width="100%" class="d128c4630cd2feb8ec34638c5b3b1b9cb" alt="flocculation using polymer - China Xinqi Polymer Co.,Ltd" title="flocculation using polymer - China Xinqi Polymer Co.,Ltd"></a>
+</div><div class="ff415a1a233715c27077bdc418fa178f9 container-fluid"><div class="pb-5 row ">
+<div class="pt-3 container">
+<div class="row">
+<div class="text-center col-lg-12 " id="flocculation using polymer - China Xinqi Polymer Co.,Ltd">
+<center>
+<center><h4>We are the china factory Gongyi Xinqi Polymer Co., Ltd supplier:<h2>Flocculant,Polyacrylamide,Cationic polyacrylamide,Anionic polyacrylamide,Nonionic polyacrylamide and Polyaluminum chloride.</h2>Widely use in Municipal Wastewater Treatment,Industrial Wastewater Treatment Sludge Thickening and Sludge Dewatering Sewage Treatment,Mining,Oil,Gas,etc</h4></center>      </br><p> WhatsApp:  &nbsp;<a href="https://api.whatsapp.com/send?phone=8619939346657&amp;text=Hello" target="_self">
+    +86 199 3934 6657
+        </a></p>            <p style="font-size:14px;line-height:24px">Email:&nbsp;  <a href="mailto:xinqi@xinqipolymer.com" target="_self">
+    xinqi@xinqipolymer.com
+        </a></p>  Visit our website:        </br><a href="https://anionicpolyacrylamide.com/when-to-use-anionic-polyacrylamide-in-wastewater-treatment/">https://anionicpolyacrylamide.com/when-to-use-anionic-polyacrylamide-in-wastewater-treatment/</a> </br></br></br>
+<h1 class="bf2a186d7b27d999f2f9a8af3ebf0ef24 text-white mb-0">flocculation using polymer - China Xinqi Polymer Co.,Ltd</h1> </br></br></br>
+
+<div class=" col-lg-12 m-auto">
+<div class="content">
+
+<br><p>In step three (Fig. 2c) we utilized the inverse radial distance vectors as floor displacements to the mesh constructed in step 2. Then, the primary FE simulation was carried out to obtain the stress distribution that was assumed to mimic the one in the actual PAAm bead. Taken collectively, COMPAX was much less dependable when extracting floor shear and larger non-radial deformations, which led to native deviations in stress computation and simultaneously affected the values of principal stresses. Table 1 showed the mean and SE values for the whole and fractional enzyme proportion quantities of the studied isoenzymes. Pulse-chase experiments indicated that the imply half life of total labelled tissue glycoprotein was about 20 hours. Table 1 confirmed the imply and normal error for the share quantity of the studied isoenzymes in the completely different goat breeds. The resultant unit bands had been in contrast using standard molecular proteins. On this research, the protein content of both ALM and KLM had been compared with that of freshly harvested intact L. major promastigotes using sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-Page).</p><p>The quantitative modifications, noticed in phospholipid and protein fractions, led to the restructuring of the erythrocyte membrane cytoskeleton, which could also be connected to elevated susceptibility to haemolysis of red blood cells. Blood samples from 7 individuals from manufacturing breed and 5 people from racing breeds (all aging 2 - three years old) have been freshly obtained from a non-public farm in Taif metropolis, placed in tubes with an anticoagulant and immediately stored at 4?C overnight. Polyacrylamide demand in enhanced oil restoration is driven by the need to maximize output from aging oil fields. Reference to the Laemmli technique in a supplies and methods part eliminates the necessity to describe the buffers, casting of gels, apparatus, and so on. Unless the paper employs some modification to the tactic, the only particulars of SDS-Page that ought to be reported in a methods part are % complete acrylamide (%T) in a gel, relative share and type of crosslinker (%C), and maybe a reference to the gel dimensions. Insets are a schematic illustration of the utilized methods. Electrophoresis spectra of gliadins are not altered by environmental circumstances or plant growth, are easily reproducible and really useful for wheat germplasm identification along with DNA markers. In general, it is a vinyl addition response initiated by free radical-producing reagents similar to ammonium persulfate (APS) and tetramethylethylenediamine (TEMED) under primary pH and degassing experimental situation.</p><p>Proteins were extracted with SDS, separated by polyacrylamide gel electrophoresis and stained with Fast Green or periodic acid-Schiff reagents. Polyacrylamide can also be typically used in molecular biology purposes as a medium for electrophoresis of proteins and nucleic acids in a method often known as Page. This work complements our systematic examine on electrophoretic mobilities beneath totally different situations, and will help to additional optimize and enhance high efficiency DNA separation in microfluidic purposes. Comparison of the recognized amino acid sequences and molecular weight of this peptide with those of other identified proteins or peptides revealed that this peptide had excessive identity to the N-terminus of hemerythrin of marine invertebrates and named the msHemerycin. When separating proteins or small nucleic acids (DNA, RNA, or oligonucleotides), the gel is often composed of various concentrations of acrylamide and a cross-linker, producing completely different sized mesh networks of polyacrylamide. The thermal stabilities of phage <p> </p><p>Advanced remedy strategies that utilize coagulants and flocculants supply enhanced effectivity and effectiveness in contaminant elimination. It is important to note that the efficiency of a single particle settling depends on the overall horizontal space available for settling. For steam boilers, it  s important that pH levels stay excessive so as to stop corrosion, decrease the amount of silica plating in a excessive-pressure boiler, and maintain proper efficiency of the boiler. And because the final particle you get is greater than the original particles, it  s heavier and due to this fact more dense and will are inclined to settle out of the water faster. By including a flocculant, you may get the particles to stick collectively, they settle out more rapidly, so you've received cleaner water to move by way of the filters. The know-how of plate settlers depends on the theory that particles have to settle down in a floor, which in a conventional sedimentation is the underside of the tank; but any surface with a horizontal component can be used to extend the capture space of the tank. Coagulation is necessary to quickly take away these particles by including chemicals to type a gelatinous precipitate that traps the fantastic particles and permits them to settle quickly.</p><p>This allows the colloids to agglomerate into larger particles during flocculation. It explains that very tremendous suspended particles and colloids can't be eliminated by plain sedimentation resulting from their small dimension and charge. The efficiency of the sedimentation tank is about by the capture velocity. The outlet turbidimeter was located at the outlet of tank to take steady measurements of fresh water high quality, whereas a manual turbidimeter provided turbidity measurements contained in the floc blanket for every velocity and every condition of plate settler location. Once water circulation enters to the HRS tank, water and particles are directed up move to be suspended inside the floc blanket, because of the usage of a jet reverser at the underside of the tank, as will be seen in Figure 1. A present of settled flocs slides down the sloped bottom. The laboratory-scale sedimentation mannequin was built following the original parameters of Agua Clara upward stream sedimentation tank. The amount of the tank is 0.Fifty one MG. In consequence, the tank was constructed utilizing clear PVC and the sludge hopper was moved from the centerline to at least one side of the tank. One container might be used as a control whereas the other 5 containers may be adjusted depending on what conditions are being examined.</p><p>Therefore, effective sewage therapy is made potential while adhering to the disposal guidelines set by pollution control boards by the deployment of particular STPs based mostly on the type of industrial actions concerned. Solenis consultants can allow you to design an answer based mostly on your particular application, cost, safety, regulatory and environmental needs. When it comes to choosing the correct flocculant for a particular application, it  s important to consider the distinctive traits of the water being treated. Based on Application, the market is segmented into Automotive, Electrical & Electronics, Aerospace, Construction and Other Applications. Horizontal circulation sedimentation has been utilized in quite a few water remedy functions. As the velocity of the flow modified, the dosage of the clay and the coagulant modified using peristaltic pumps as properly to maintain fixed concentrations. All different parameters remained constant and had been similar to values used in AguaClara water therapy plants. Following steps used by the AguaClara group in water therapy processes, the experimental set up involved addition of coagulant and flocculation before sedimentation. Medium screens have bar spacings from 6-forty mm set at an angle.</p><p>Coarse screens called racks or bar screens have openings over 50 mm. Hurst et al., lies in the creation and stabilization of a fluidized bed of flocs referred to as floc blanket. In a 2012 article within the Journal of Water, Sanitation and Hygiene for Development, they proposed a solar disinfection regimen that first treats the water with a process known as flocculation. Graphs of water quality parameters versus coagulant dose aided in analyzing the coagulation-flocculation process. Turbidity measurements after settling confirmed an optimal dosage between 6-eight ml of aluminum sulfate coagulant reduced turbidity probably the most. In TW, the residual turbidity decreased as the MW increased. An answer of polyaluminum chlore PACl was added as coagulant at a concentration of 1.55 mg of PACI per liter of water to simulate the circumstances of flocculation in AguaClara plants. Which means the CO2 concentration increases all through the night time, and peaks round sunrise. Iron(III) complexes, with a high spin d5 configuration, are kinetically labile, which signifies that ligands rapidly dissociate and reassociate. Some of these particles are captured by settlers and begin to slide down once more to floc blanket or to the bottom of the tank, lowering the turbulence of effluent water.</p><p> </p><p>It  s time to stop utilizing coagulants and flocculants in wastewater therapy. SludgeHammer processes are cleaner, simpler, and will prevent money and time in the long run. Moreover, the presence of spacer might scale back the dimensions suspended time significantly within the movement channel, leading to precipitation on the spacers. With aluminum sulfate, optimum coagulation efficiency and minimum floc solubility normally occur at pH 6.Zero to 7.0. Iron coagulants can be used successfully over the much broader pH range of 5.Zero to 11.0. If ferrous compounds are used, oxidation to ferric iron is required for full precipitation. Edwards, Mark. "What are Algae's Competitive Advantages?" Algae Industry Magazine. However, micro organism are too small to be straight filtered out. For the reason that remaining material is dissolved, it won  t settle and can't be filtered out. 6. During this stage, excess sludge is pumped out and moved to settling tanks. Johkasou techniques are on-site wastewater treatment methods tanks. Once on the filter, the coagulants are added to agglomerate the material so that liquid can pass through the material when filter presses add strain. Some coagulants may have antagonistic results on water our bodies or ecological environments throughout use, such as residual metallic ions or toxic byproducts.</p><p>81. Santos T. R. T. et al., Development of a magnetic coagulant primarily based on Moringa oleifera seed extract for water therapy. Philip  s background is in Mechanical Design Engineering specializing in new product improvement and Finite Element Analysis. Focusing on the Economic Outcomes of Sustainable Polymer Engineering from an academic perspective reveals both opportunities and challenges. </div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div><script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</p>
+<center>Powered by : China Xinqi Polymer Co., Ltd.</center>
+</p>
+</body>
+</html>
